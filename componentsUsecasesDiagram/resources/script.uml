@@ -64,6 +64,9 @@ to select the current element in current template selector</body>
           <body>true</body>
         </specification>
       </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_6xzXYEMaEe2icI8F2N25eA" name="Actor27">
+        <generalization xmi:type="uml:Generalization" xmi:id="_7NRycEMaEe2icI8F2N25eA" general="_M3F54EL8Ee2icI8F2N25eA"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sNnmwMzsEeqmrbZwnausIQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sNx-0MzsEeqmrbZwnausIQ" source="PapyrusVersion">
@@ -165,4 +168,8 @@ to select the current element in current template selector</body>
   <modelview:ViewOf xmi:id="_C9B8IEMKEe2icI8F2N25eA" base_Element="_eec8sEL9Ee2icI8F2N25eA" relatedElement="_rdae8B4wEey1OL6weTBvXg"/>
   <modelview:ViewOf xmi:id="_M_QHoEMNEe2icI8F2N25eA" base_Element="_DqGpEEMAEe2icI8F2N25eA" relatedElement="_rdae8B4wEey1OL6weTBvXg"/>
   <uml2qvto:IgnoreAll xmi:id="_0rZa0EMPEe2icI8F2N25eA" base_Element="_eec8sUL9Ee2icI8F2N25eA"/>
+  <uml2qvto:QvtoTemplate xmi:id="_8QuzgEMaEe2icI8F2N25eA" base_Element="_7NRycEMaEe2icI8F2N25eA">
+    <selector>(__elem1.allOwnedElements()->selectByType(uml::Generalization)->select(g | g.oclAsType(Generalization).general->exists(s | s.oclIsTypeOf(Actor))))</selector>
+  </uml2qvto:QvtoTemplate>
+  <modelview:ViewOf xmi:id="_8plYYEMaEe2icI8F2N25eA" base_Element="_7NRycEMaEe2icI8F2N25eA" relatedElement="_rdae8B4wEey1OL6weTBvXg"/>
 </xmi:XMI>
