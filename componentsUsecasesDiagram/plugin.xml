@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+<extension
+      point="org.eclipse.ui.commands">
+   <command
+         name="Classes diagram per package"
+         id="net.samsarasoftware.papyrus.diagramtemplate.componentsusecasesdiagram.ComponentsUsecasesDiagramLauncher"
+      	defaultHandler="net.samsarasoftware.papyrus.diagramtemplate.componentsusecasesdiagram.ComponentsUsecasesDiagramLauncher">
+      	
+   </command>
+</extension>
+<extension
+      point="org.eclipse.ui.menus">
+   <menuContribution
+         allPopups="true"
+         locationURI="popup:org.eclipse.papyrus.views.modelexplorer.modelexplorer.popup?">
+      <menu
+               id="GenerateDiagram"
+               label="Generate diagram">
+            <command  commandId="net.samsarasoftware.papyrus.diagramtemplate.componentsusecasesdiagram.ComponentsUsecasesDiagramLauncher"
+            label="Components use cases diagram"
+            style="push"
+            >
+				<visibleWhen checkEnabled="false">
+				   <iterate ifEmpty="false" operator="and">
+					  <adapt type="org.eclipse.emf.ecore.EObject">
+						 <instanceof  value="org.eclipse.uml2.uml.Package"/>
+					  </adapt>
+				   </iterate>
+				</visibleWhen>            
+      </command>
+            </menu>
+   </menuContribution>
+</extension>
+
+</plugin>
