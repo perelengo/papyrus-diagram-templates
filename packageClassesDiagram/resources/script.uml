@@ -32,50 +32,38 @@ to select the current element in current template selector</body>
           </packagedElement>
         </packagedElement>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_OfzR0jQOEe2_kJj5foVKZA" name="'+getUniqueName(__elem2.implementingClassifier.oclAsType(NamedElement))+'">
-        <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_cPeG0DQOEe2_kJj5foVKZA" name="'+getUniqueName(__elem3.oclAsType(NamedElement))+'" client="_OfzR0jQOEe2_kJj5foVKZA" supplier="_lHqx8B49Eey1OL6weTBvXg" contract="_lHqx8B49Eey1OL6weTBvXg"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_OfzR0jQOEe2_kJj5foVKZA" name="'+getUniqueName(__elem2.implementingClassifier.oclAsType(NamedElement))+'_realization_client">
+        <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_cPeG0DQOEe2_kJj5foVKZA" name="'+getUniqueName(__elem2.implementingClassifier.oclAsType(NamedElement))+' realizing '+getUniqueName(__elem2.contract.oclAsType(NamedElement))+'" client="_OfzR0jQOEe2_kJj5foVKZA" supplier="_lHqx8B49Eey1OL6weTBvXg" contract="_lHqx8B49Eey1OL6weTBvXg"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Interface" xmi:id="_lHqx8B49Eey1OL6weTBvXg" name="'+getUniqueName(__elem2.contract.oclAsType(NamedElement))+'"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_UpRs4B49Eey1OL6weTBvXg" name="'+getUniqueName(__elem2.general.oclAsType(NamedElement))+'"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_ffT-YDP3Ee2H4JwPkWM7nw" name="'+getUniqueName(__elem2.specific.oclAsType(NamedElement))+'">
+      <packagedElement xmi:type="uml:Interface" xmi:id="_lHqx8B49Eey1OL6weTBvXg" name="'+getUniqueName(__elem2.contract.oclAsType(NamedElement))+'_realization_supplier"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_UpRs4B49Eey1OL6weTBvXg" name="'+getUniqueName(__elem2.general.oclAsType(NamedElement))+'_general"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ffT-YDP3Ee2H4JwPkWM7nw" name="'+getUniqueName(__elem2.specific.oclAsType(NamedElement))+'_generalization_owner">
         <generalization xmi:type="uml:Generalization" xmi:id="_YVVH4B49Eey1OL6weTBvXg" general="_UpRs4B49Eey1OL6weTBvXg"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_t3OVwDQQEe2_kJj5foVKZA" name="'+getUniqueName(__elem2.oclAsType(NamedElement))+'">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_6PFDQDQQEe2_kJj5foVKZA" name="'+getUniqueName(__elem2.oclAsType(NamedElement))+'" type="_t3OVwDQQEe2_kJj5foVKZA" association="_6PB_8DQQEe2_kJj5foVKZA">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6PFqUDQQEe2_kJj5foVKZA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6PFqUTQQEe2_kJj5foVKZA" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_6PGRYDQQEe2_kJj5foVKZA" name="'+getUniqueName(__elem2.oclAsType(NamedElement))+'" type="_t3OVwDQQEe2_kJj5foVKZA" association="_6PB_8DQQEe2_kJj5foVKZA"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_6PB_8DQQEe2_kJj5foVKZA" name="'+getUniqueName(__elem2.oclAsType(NamedElement))+'" memberEnd="_6PFDQDQQEe2_kJj5foVKZA _6PGRYDQQEe2_kJj5foVKZA">
+      <packagedElement xmi:type="uml:Class" xmi:id="_t3OVwDQQEe2_kJj5foVKZA" name="'+getUniqueName(__elem2.oclAsType(NamedElement))+'"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_6PB_8DQQEe2_kJj5foVKZA" name="'+getUniqueName(__elem2.memberEnd->asSequence()->at(1).oclAsType(NamedElement))+'" memberEnd="_6PFDQDQQEe2_kJj5foVKZA _6PGRYDQQEe2_kJj5foVKZA">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6PD1IDQQEe2_kJj5foVKZA" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6PD1ITQQEe2_kJj5foVKZA" key="nature" value="UML_Nature"/>
         </eAnnotations>
-        <substitution xmi:type="uml:Substitution" xmi:id="_g-7sID29Ee2ih5ceoUDwmw" name="'+getUniqueName(__elem3.oclAsType(NamedElement))+'" client="_6PB_8DQQEe2_kJj5foVKZA" supplier="_fHY7sD29Ee2ih5ceoUDwmw" contract="_fHY7sD29Ee2ih5ceoUDwmw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_6PFDQDQQEe2_kJj5foVKZA" name="'+getUniqueName(__elem2.oclAsType(NamedElement))+'" type="_t3OVwDQQEe2_kJj5foVKZA" association="_6PB_8DQQEe2_kJj5foVKZA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6PFqUDQQEe2_kJj5foVKZA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6PFqUTQQEe2_kJj5foVKZA" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_6PGRYDQQEe2_kJj5foVKZA" name="'+getUniqueName(__elem2.oclAsType(NamedElement))+'" type="_t3OVwDQQEe2_kJj5foVKZA" association="_6PB_8DQQEe2_kJj5foVKZA"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_TpbncD25Ee2ih5ceoUDwmw" name="'+getUniqueName(__elem2.oclAsType(NamedElement))+'"/>
       <packagedElement xmi:type="uml:Interface" xmi:id="_TpcOgD25Ee2ih5ceoUDwmw" name="'+getUniqueName(__elem2.oclAsType(NamedElement))+'"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_W5K54D25Ee2ih5ceoUDwmw" name="'+getUniqueName(__elem2.oclAsType(NamedElement))+'" client="_TpcOgD25Ee2ih5ceoUDwmw" supplier="_TpbncD25Ee2ih5ceoUDwmw"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_W5K54D25Ee2ih5ceoUDwmw" name="'+getUniqueName(__elem2.client->asSequence()->at(1).oclAsType(NamedElement))+' abstracts '+getUniqueName(__elem2.supplier->asSequence()->at(1).oclAsType(NamedElement))+'" client="_TpcOgD25Ee2ih5ceoUDwmw" supplier="_TpbncD25Ee2ih5ceoUDwmw"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_EKXUkD29Ee2ih5ceoUDwmw" name="'+getUniqueName(__elem2.oclAsType(NamedElement))+'"/>
       <packagedElement xmi:type="uml:Interface" xmi:id="_EKcNED29Ee2ih5ceoUDwmw" name="'+getUniqueName(__elem2.oclAsType(NamedElement))+'"/>
-      <packagedElement xmi:type="uml:Usage" xmi:id="_yZ3cgD2-Ee2ih5ceoUDwmw" name="'+getUniqueName(__elem2.oclAsType(NamedElement))+'" client="_EKcNED29Ee2ih5ceoUDwmw" supplier="_EKXUkD29Ee2ih5ceoUDwmw"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_GV5GED2_Ee2ih5ceoUDwmw" name="'+getUniqueName(__elem2.oclAsType(NamedElement))+'"/>
-      <packagedElement xmi:type="uml:Interface" xmi:id="_GV5tID2_Ee2ih5ceoUDwmw" name="'+getUniqueName(__elem2.oclAsType(NamedElement))+'">
-        <substitution xmi:type="uml:Substitution" xmi:id="_NEBK8D2_Ee2ih5ceoUDwmw" name="'+getUniqueName(__elem3.oclAsType(NamedElement))+'" client="_GV5tID2_Ee2ih5ceoUDwmw" supplier="_GV5GED2_Ee2ih5ceoUDwmw" contract="_GV5GED2_Ee2ih5ceoUDwmw"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_yZ3cgD2-Ee2ih5ceoUDwmw" name="'+getUniqueName(__elem2.client->asSequence()->at(1).oclAsType(NamedElement))+' uses  '+getUniqueName(__elem2.supplier->asSequence()->at(1).oclAsType(NamedElement))+'" client="_EKcNED29Ee2ih5ceoUDwmw" supplier="_EKXUkD29Ee2ih5ceoUDwmw"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_GV5GED2_Ee2ih5ceoUDwmw" name="'+getUniqueName(__elem2.contract.oclAsType(NamedElement))+'"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_GV5tID2_Ee2ih5ceoUDwmw" name="'+getUniqueName(__elem2.substitutingClassifier.oclAsType(NamedElement))+'">
+        <substitution xmi:type="uml:Substitution" xmi:id="_NEBK8D2_Ee2ih5ceoUDwmw" name="'+getUniqueName(__elem2.substitutingClassifier.oclAsType(NamedElement))+' substitutes '+getUniqueName(__elem2.contract.oclAsType(NamedElement))+'" client="_GV5tID2_Ee2ih5ceoUDwmw" supplier="_GV5GED2_Ee2ih5ceoUDwmw" contract="_GV5GED2_Ee2ih5ceoUDwmw"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_fHY7sD29Ee2ih5ceoUDwmw" name="'+getUniqueName(__elem2.oclAsType(NamedElement))+'" memberEnd="_fHaw4D29Ee2ih5ceoUDwmw _fHbX8j29Ee2ih5ceoUDwmw">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fHaJ0D29Ee2ih5ceoUDwmw" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fHaJ0T29Ee2ih5ceoUDwmw" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_fHbX8j29Ee2ih5ceoUDwmw" name="'+getUniqueName(__elem2.oclAsType(NamedElement))+'" type="_t3OVwDQQEe2_kJj5foVKZA" association="_fHY7sD29Ee2ih5ceoUDwmw"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_fHaw4D29Ee2ih5ceoUDwmw" name="'+getUniqueName(__elem2.oclAsType(NamedElement))+'" type="_t3OVwDQQEe2_kJj5foVKZA" association="_fHY7sD29Ee2ih5ceoUDwmw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fHbX8D29Ee2ih5ceoUDwmw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fHbX8T29Ee2ih5ceoUDwmw" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_cMOqwD3AEe2ih5ceoUDwmw" name="'+getUniqueName(__elem2.oclAsType(NamedElement))+'"/>
-      <packagedElement xmi:type="uml:Interface" xmi:id="_cMOqwT3AEe2ih5ceoUDwmw" name="'+getUniqueName(__elem2.oclAsType(NamedElement))+'"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_jpzPkD3AEe2ih5ceoUDwmw" name="'+getUniqueName(__elem2.oclAsType(NamedElement))+'" client="_cMOqwT3AEe2ih5ceoUDwmw" supplier="_cMOqwD3AEe2ih5ceoUDwmw"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_cMOqwD3AEe2ih5ceoUDwmw" name="'+getUniqueName(__elem2.oclAsType(NamedElement))+'_supplier"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_cMOqwT3AEe2ih5ceoUDwmw" name="'+getUniqueName(__elem2.oclAsType(NamedElement))+'_client"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_jpzPkD3AEe2ih5ceoUDwmw" name="'+getUniqueName(__elem2.client->asSequence()->at(1).oclAsType(NamedElement))+' depends on '+getUniqueName(__elem2.supplier->asSequence()->at(1).oclAsType(NamedElement))+'" client="_cMOqwT3AEe2ih5ceoUDwmw" supplier="_cMOqwD3AEe2ih5ceoUDwmw"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sNnmwMzsEeqmrbZwnausIQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sNx-0MzsEeqmrbZwnausIQ" source="PapyrusVersion">
@@ -146,16 +134,16 @@ to select the current element in current template selector</body>
     <selector>(__elem3.ownedElement->selectByType(uml::Class))</selector>
   </uml2qvto:QvtoTemplate>
   <uml2qvto:QvtoTemplate xmi:id="_T4sUADQMEe2_kJj5foVKZA" base_Element="_UpRs4B49Eey1OL6weTBvXg">
-    <selector>(__elem1.allOwnedElements()->selectByType(uml::Class))->collect(c| c.oclAsType(Class).generalization)</selector>
+    <selector>(__elem1.allOwnedElements()->selectByType(uml::Generalization))</selector>
   </uml2qvto:QvtoTemplate>
   <uml2qvto:QvtoTemplate xmi:id="_aRSNwDQMEe2_kJj5foVKZA" base_Element="_ffT-YDP3Ee2H4JwPkWM7nw">
-    <selector>(__elem1.allOwnedElements()->selectByType(uml::Class))->collect(c| c.oclAsType(Class).generalization)</selector>
+    <selector>(__elem1.allOwnedElements()->selectByType(uml::Generalization))</selector>
   </uml2qvto:QvtoTemplate>
   <uml2qvto:QvtoTemplate xmi:id="_Of2VIDQOEe2_kJj5foVKZA" base_Element="_OfzR0jQOEe2_kJj5foVKZA">
-    <selector>(__elem1.allOwnedElements()->selectByType(uml::Class))->collect(c| c.oclAsType(Class).interfaceRealization)</selector>
+    <selector>(__elem1.allOwnedElements()->selectByType(uml::InterfaceRealization))</selector>
   </uml2qvto:QvtoTemplate>
   <uml2qvto:QvtoTemplate xmi:id="_tRePQDQOEe2_kJj5foVKZA" base_Element="_lHqx8B49Eey1OL6weTBvXg">
-    <selector>(__elem1.allOwnedElements()->selectByType(uml::Class))->collect(c| c.oclAsType(Class).interfaceRealization)</selector>
+    <selector>(__elem1.allOwnedElements()->selectByType(uml::InterfaceRealization))</selector>
   </uml2qvto:QvtoTemplate>
   <modelview:ViewOf xmi:id="_zc6d0DQOEe2_kJj5foVKZA" base_Element="_cPeG0DQOEe2_kJj5foVKZA" relatedElement="_rdae8B4wEey1OL6weTBvXg"/>
   <uml2qvto:QvtoTemplate xmi:id="_t3Pj4DQQEe2_kJj5foVKZA" base_Element="_t3OVwDQQEe2_kJj5foVKZA">
@@ -221,25 +209,15 @@ to select the current element in current template selector</body>
   <uml2qvto:QvtoTemplate xmi:id="_EKfQYD29Ee2ih5ceoUDwmw" base_Element="_EKcNED29Ee2ih5ceoUDwmw">
     <selector>(__elem1.allOwnedElements()->selectByType(uml::Usage)->collect(e | e.client))</selector>
   </uml2qvto:QvtoTemplate>
-  <uml2qvto:QvtoTemplate xmi:id="_uzirgD29Ee2ih5ceoUDwmw" base_Element="_g-7sID29Ee2ih5ceoUDwmw">
-    <selector>(__elem2.allOwnedElements()->selectByType(uml::Substitution)->select(s | s.oclAsType(Substitution).contract.oclIsTypeOf(Association) and  s.oclAsType(Substitution).substitutingClassifier.oclIsTypeOf(Association)))</selector>
-  </uml2qvto:QvtoTemplate>
-  <modelview:ViewOf xmi:id="_uzkgsD29Ee2ih5ceoUDwmw" base_Element="_g-7sID29Ee2ih5ceoUDwmw" relatedElement="_rdae8B4wEey1OL6weTBvXg"/>
-  <uml2qvto:QvtoTemplate xmi:id="_D0LzwD2-Ee2ih5ceoUDwmw" base_Element="_fHY7sD29Ee2ih5ceoUDwmw">
-    <selector>(__elem1.allOwnedElements()->selectByType(uml::Substitution)->select(s | s.oclAsType(Substitution).contract.oclIsTypeOf(Association) and  s.oclAsType(Substitution).substitutingClassifier.oclIsTypeOf(Association))->collect(s | s.contract))</selector>
-  </uml2qvto:QvtoTemplate>
   <uml2qvto:QvtoTemplate xmi:id="_0-4W8D2-Ee2ih5ceoUDwmw" base_Element="_yZ3cgD2-Ee2ih5ceoUDwmw">
     <selector>(__elem1.allOwnedElements()->selectByType(uml::Usage))</selector>
   </uml2qvto:QvtoTemplate>
   <modelview:ViewOf xmi:id="_0-6MID2-Ee2ih5ceoUDwmw" base_Element="_yZ3cgD2-Ee2ih5ceoUDwmw" relatedElement="_rdae8B4wEey1OL6weTBvXg"/>
   <uml2qvto:QvtoTemplate xmi:id="_GV5tIT2_Ee2ih5ceoUDwmw" base_Element="_GV5GED2_Ee2ih5ceoUDwmw">
-    <selector>(__elem1.allOwnedElements()->selectByType(uml::Substitution)->select(s | s.oclAsType(Substitution).contract.oclIsKindOf(Classifier) and  s.oclAsType(Substitution).substitutingClassifier.oclIsKindOf(Classifier))->collect(s | oclAsType(Substitution).contract))</selector>
+    <selector>(__elem1.allOwnedElements()->selectByType(uml::Substitution))</selector>
   </uml2qvto:QvtoTemplate>
   <uml2qvto:QvtoTemplate xmi:id="_GV6UMD2_Ee2ih5ceoUDwmw" base_Element="_GV5tID2_Ee2ih5ceoUDwmw">
-    <selector>(__elem1.allOwnedElements()->selectByType(uml::Substitution)->select(s | s.oclAsType(Substitution).contract.oclIsKindOf(Classifier) and  s.oclAsType(Substitution).substitutingClassifier.oclIsKindOf(Classifier))->collect(s | oclAsType(Substitution).substitutingClassifier))</selector>
-  </uml2qvto:QvtoTemplate>
-  <uml2qvto:QvtoTemplate xmi:id="_OBXkAD2_Ee2ih5ceoUDwmw" base_Element="_NEBK8D2_Ee2ih5ceoUDwmw">
-    <selector>(__elem2.allOwnedElements()->selectByType(uml::Substitution)->select(s | s.oclAsType(Substitution).contract.oclIsKindOf(Classifier) and  s.oclAsType(Substitution).substitutingClassifier.oclIsKindOf(Classifier)))</selector>
+    <selector>(__elem1.allOwnedElements()->selectByType(uml::Substitution))</selector>
   </uml2qvto:QvtoTemplate>
   <modelview:ViewOf xmi:id="_OBZZMD2_Ee2ih5ceoUDwmw" base_Element="_NEBK8D2_Ee2ih5ceoUDwmw" relatedElement="_rdae8B4wEey1OL6weTBvXg"/>
   <uml2qvto:QvtoTemplate xmi:id="_cMPR0D3AEe2ih5ceoUDwmw" base_Element="_cMOqwD3AEe2ih5ceoUDwmw">
