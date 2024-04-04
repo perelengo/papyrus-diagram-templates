@@ -21,14 +21,14 @@
 	<packaging>eclipse-plugin</packaging>
 
 	<properties>
-		<tycho.version>2.2.0</tycho.version>
+		<tycho.version>2.7.4</tycho.version>
 	</properties>
 
 	<repositories>
 		<repository>
-			<id>eclipse-2021-12</id>
+			<id>eclipse-2022-12</id>
 			<layout>p2</layout>
-			<url>https://download.eclipse.org/releases/2021-12/</url>
+			<url>https://download.eclipse.org/releases/latest/</url>
 			<snapshots>
 				<enabled>false</enabled>
 			</snapshots>
@@ -37,7 +37,7 @@
 		<repository>
 			<id>eclipse-papyrus 6 update site</id>
 			<layout>p2</layout>
-			<url>https://download.eclipse.org/modeling/mdt/papyrus/updates/releases/2021-12/</url>
+			<url>https://download.eclipse.org/modeling/mdt/papyrus/updates/releases/latest/</url>
 			<snapshots>
 				<enabled>false</enabled>
 			</snapshots>
@@ -61,17 +61,14 @@
 
 	</repositories>
 
-	<!--
-	Already provided by runtime
-		<dependencies>
-		<dependency>
+	<dependencies>
+		<!--dependency>
 			<groupId>net.samsarasoftware.scripting</groupId>
 			<artifactId>uml-scripting-engine</artifactId>
 			<version>0.3.0-SNAPSHOT</version>
-		</dependency>
-	</dependencies> -->
+		</dependency-->
+	</dependencies>
 	<build>
-
 		<plugins>
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
@@ -96,7 +93,7 @@
 				<version>${tycho.version}</version>
 				<configuration>
 					<resolver>p2</resolver>
-					<pomDependencies>consider</pomDependencies>
+				
 				</configuration>
 			</plugin>
 			<plugin>
@@ -111,20 +108,6 @@
 							<goal>plugin-source</goal>
 						</goals>
 					</execution> -->
-				</executions>
-			</plugin>
-			<plugin>
-				<groupId>net.samsarasoftware</groupId>
-				<artifactId>tycho-versions-plugin</artifactId>
-				<version>0.1.0</version>
-				<executions>
-					<execution>
-						<id>versions</id>
-						<phase>pre-clean</phase>
-						<goals>
-							<goal>synchronize-version</goal>
-						</goals>
-					</execution>
 				</executions>
 			</plugin>
 		</plugins>
@@ -146,13 +129,11 @@
 								<goals>
 									<goal>copy-dependencies</goal>
 								</goals>
-								<inherited>false</inherited>
+								<inherited>false</inherited>	
 								<configuration>
 									<addParentPoms>true</addParentPoms>
-									<includeGroupIds>p2.eclipse-plugin</includeGroupIds>
 									<copyPom>true</copyPom>
-									<includeTypes>jar</includeTypes>
-									<outputDirectory>${M2_REPO}</outputDirectory>
+									<outputDirectory>C:/Users/pjosepro/.m2/repository</outputDirectory>
 									<useRepositoryLayout>true</useRepositoryLayout>
 								</configuration>
 							</execution>
